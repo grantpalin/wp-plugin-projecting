@@ -1,0 +1,3 @@
+#dashboard_right_now .project-count a::before {
+	content: "\f322";
+}
