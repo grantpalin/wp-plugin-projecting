@@ -95,7 +95,7 @@ function projecting_right_now_content_table_end() {
 
 		// Output a link only if the current user is able to edit content of this type
 		if ( $post_type_object && current_user_can( $post_type_object->cap->edit_posts ) ) {
-			printf( '<li class="project-count"><a href="edit.php?post_type=%1$s">%1$s</a></li>', $text );
+			printf( '<li class="project-count"><a href="edit.php?post_type=project">%1$s</a></li>', $text );
 		} else { // Else output just the number and text
 			printf( '<li class="project-count"><span>%1$s</span></li>', $text );
 		}
